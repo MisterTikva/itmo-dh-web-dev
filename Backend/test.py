@@ -29,7 +29,7 @@ def calendar_page(year = "2022", event_type = "Выставки", max_num = 300)
         abort(404, f"Запись не найдена. Доступные категории:  {' '.join(date_dict.keys())} ") 
     
     cal = calendar.LocaleHTMLCalendar(locale="ru_RU")
-    html = cal.formatyearpage(2022, css="styles.css", width=4)
+    html = cal.formatyearpage(year, css="styles.css", width=4)
     soup = BeautifulSoup(html)
     for m_idx, month in enumerate(soup.select("table.month")):
         for d_idx, day in enumerate(month.select("td.mon, td.tue, td.wed, td.thu, td.fri, td.sat, td.sun")):
