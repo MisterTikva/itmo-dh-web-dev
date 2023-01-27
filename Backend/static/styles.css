@@ -1,0 +1,29 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.year{
+    height: 100%;
+    padding: 15px;
+}
+table.month{
+    padding: 5px;
+}
+
+th{
+    padding: 5px;
+}
+
+tr{
+    vertical-align: top;
+}
+
+td.mon, td.tue, td.wed, td.thu, td.fri, td.sat, td.sun {
+    padding: 5px;
+    border-radius: 100%;
+    text-align: center;
+    vertical-align: middle;
+    border: 3px solid;
+    border-color: white;
+    color: white
+}
